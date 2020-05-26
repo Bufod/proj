@@ -1,0 +1,16 @@
+.combo-box{
+    -fx-background-color: #bf9663;
+    -fx-background-radius: 50px;
+}
+
+.arrow{
+    -fx-background-color: #ffffff;
+}
+
+.combo-box > .list-cell {
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.choice-box .menu-item > .label { -fx-text-fill: black; }

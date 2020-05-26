@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #232B59;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.controllers.RegistrationForm">
+    <children>
+        <Text fill="WHITE" layoutX="177.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+            <font>
+                <Font size="43.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutX="59.0" layoutY="68.0" prefHeight="320.0" prefWidth="481.0" style="-fx-background-color: #ffffff;">
+            <children>
+            <TextField fx:id="nameField" layoutX="112.0" layoutY="75.0" prefHeight="25.0" prefWidth="259.0" promptText="Имя" />
+            <TextField fx:id="lastNameField" layoutX="111.0" layoutY="112.0" prefHeight="25.0" prefWidth="259.0" promptText="Фамилия" />
+                <TextField fx:id="loginField" layoutX="111.0" layoutY="148.0" prefHeight="25.0" prefWidth="259.0" promptText="Логин" />
+                <PasswordField fx:id="passwordField" layoutX="111.0" layoutY="184.0" prefHeight="25.0" prefWidth="259.0" promptText="Пароль" />
+            <PasswordField fx:id="passwordFieldRepeat" layoutX="111.0" layoutY="220.0" prefHeight="25.0" prefWidth="259.0" promptText="Повторение пароля" />
+                <Button fx:id="signInBt" layoutX="164.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#signUpBt" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #BF9663;" text="Вуаля" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

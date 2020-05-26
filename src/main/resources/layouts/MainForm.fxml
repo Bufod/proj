@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="300.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.controllers.MainForm">
+   <children>
+      <VBox fx:id="contentPane" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="menuPane" prefHeight="600.0" prefWidth="200.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);; -fx-background-color: #232B59;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fx:id="circleFrameBack" alignment="CENTER" fillHeight="false" layoutX="45.0" layoutY="30.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="110.0" style="-fx-background-color: #ffffff; -fx-background-radius: 100%;" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <ImageView fx:id="circleFrame" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="142.0" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="fullName" alignment="CENTER" text="Иван&#10;Иванов" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox layoutX="5.0" layoutY="210.0" prefHeight="334.0" prefWidth="200.0" spacing="2.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="220.0">
+               <children>
+                  <Button fx:id="myWalletBt" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickMyWalletBt" styleClass="button-selected" stylesheets="@../style/button.css" text="Мой кошелек" />
+                  <Button fx:id="replanishAcc" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickReplanishAcc" stylesheets="@../style/button.css" text="Пополнить счет" />
+                  <Button fx:id="withdrawalBt" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickWithdrawalBt" stylesheets="@../style/button.css" text="Расход" />
+                  <Button fx:id="expenseLogBt" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClickExpenseLogBt" stylesheets="@../style/button.css" text="Журнал расходов" />
+               </children>
+            </VBox>
+            <ImageView fx:id="changeUser" fitHeight="40.0" fitWidth="40.0" layoutX="146.0" layoutY="554.0" onMouseClicked="#onMouseCkickedChangeUser" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="14.0">
+               <image>
+                  <Image url="@../assets/change_user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delUser" fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="562.0" onMouseClicked="#onMouseClickDelUser" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@../assets/trash.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
